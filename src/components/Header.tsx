@@ -19,7 +19,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to={'Home'} className="flex items-center gap-3 group">
+          <Link to={'/'} className="flex items-center gap-3 group">
             <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-amber-500 rounded-xl flex items-center justify-center transform group-hover:scale-105 transition-transform">
               <Car className="w-7 h-7 text-white" />
             </div>
