@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Loader2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CarCard from '../cars/CarCard';
 import { CARS } from '@/data/cars';
 import type { ICar } from '@/types/car.interface';
+import Loading from '@/components/Loading';
 
 export default function FeaturedCars() {
   const [cars, setCars] = useState<ICar[]>([]);
@@ -28,15 +28,7 @@ export default function FeaturedCars() {
   }, []);
 
   if (loading) {
-    return (
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-center items-center h-64">
-            <Loader2 className="w-8 h-8 animate-spin text-red-500" />
-          </div>
-        </div>
-      </section>
-    );
+    return <Loading />;
   }
 
   return (
