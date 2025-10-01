@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
+# 🚘 AutoMax
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um site moderno e responsivo para a concessionária **AutoMax**, oferecendo uma experiência elegante e interativa para clientes interessados em veículos.
 
-Currently, two official plugins are available:
+## 📌 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Carros em Destaque**: página inicial com veículos selecionados e animações modernas.
+* **Listagem de Veículos**: todos os carros disponíveis, com **filtros dinâmicos** por **marca, preço e ano**.
+* **Página de Contato**: formulário funcional para envio de mensagens e integração com **mapa interativo**.
+* **Design Responsivo**: otimizado para desktop, tablets e dispositivos móveis.
+* **Animações Suaves**: transições e interações criadas com **Framer Motion**.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+* ⚛️ [ReactJS](https://react.dev/) – Biblioteca principal para construção da interface.
+* 🟦 [TypeScript](https://www.typescriptlang.org/) – Tipagem estática para maior segurança no desenvolvimento.
+* 🎨 [TailwindCSS](https://tailwindcss.com/) – Estilização rápida e responsiva.
+* 🧩 [shadcn/ui](https://ui.shadcn.com/) – Componentes acessíveis e personalizáveis.
+* 🌐 [React Router](https://reactrouter.com/) – Navegação entre páginas.
+* 🎬 [Framer Motion](https://www.framer.com/motion/) – Animações fluidas e interativas.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Como Rodar o Projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 1. Clone o repositório
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/Grazziano/AutoMax.git
+cd automax
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Instale as dependências
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+# ou
+yarn install
 ```
+
+### 3. Rode o projeto em modo desenvolvimento
+
+```bash
+npm run dev
+# ou
+yarn dev
+```
+
+### 4. Acesse no navegador
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+automax/
+├── src/
+│   ├── assets/          # Imagens e ícones
+│   ├── components/      # Componentes reutilizáveis (botões, cards, header, footer, etc.)
+│   ├── data/            # Dados ficticios para alimentar o site
+│   ├── layouts          # Layouts da aplicação
+│   ├── pages/           # Páginas principais (Home, Listagem, Contato)
+│   ├── styles/          # Estilos globais
+│   ├── App.tsx          # Componente principal
+│   ├── main.tsx         # Ponto de entrada
+│   └── routes.tsx       # Configuração de rotas com React Router
+├── public/              # Arquivos estáticos
+├── package.json
+└── README.md
+```
+
+---
+
+## 🎯 Próximos Passos
+
+* 🔍 Adicionar busca avançada de veículos.
+* 🛒 Criar simulação de financiamento online.
+* 📱 Implementar PWA para acesso offline.
+
+---
+
+## 📬 Contato
+
+Desenvolvido por **[Grazziano]** 💻
+📧 Email: [grazzianofagundes@gmail.com](mailto:grazzianofagundes@gmail.com)
+🌐 Portfolio: [portfolio-grazzianos-projects.vercel.app/](https://portfolio-grazzianos-projects.vercel.app/)
