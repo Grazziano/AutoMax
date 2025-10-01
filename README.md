@@ -2,6 +2,26 @@
 
 Um site moderno e responsivo para a concessionária **AutoMax**, oferecendo uma experiência elegante e interativa para clientes interessados em veículos.
 
+---
+
+## 🖼️ Screenshots
+
+![App](./docs/screenshots/app.gif)
+
+<!-- ### Página Inicial
+
+![Home](./docs/screenshots/home.png)
+
+### Listagem de Veículos
+
+![Listagem](./docs/screenshots/cars.png)
+
+### Página de Contato
+
+![Contato](./docs/screenshots/contact.png) -->
+
+---
+
 ## 📌 Funcionalidades
 
 * **Carros em Destaque**: página inicial com veículos selecionados e animações modernas.
